@@ -1,0 +1,13 @@
+task wrapper(type: Wrapper) {
+   gradleVersion = "${gradleVersion}"
+}
+
+apply plugin: 'java'
+
+dependencies {
+   testCompile 'junit:junit:4.12'
+}
+
+jar {
+   baseName = 'json'
+}
